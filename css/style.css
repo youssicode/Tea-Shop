@@ -107,7 +107,7 @@ figure {
   justify-content: center;
   align-items: center;
 }
-.cnt-locations h2 {
+#cnt-locations h2 {
   background-color: transparent;
 }
 .locations {

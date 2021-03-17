@@ -1,0 +1,137 @@
+/* ? universal styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  background-color: black;
+}
+
+body {
+  background-color: rgb(24, 23, 23);
+  color: seashell;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+/* ?  Main container */
+main {
+  width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+/*? Logo & Links Nav */
+
+header {
+  border-bottom: 1px solid seashell;
+  width: inherit;
+  height: 69px;
+  position: fixed;
+  /**  z-index: 1;  Use it if you'll use opacity */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 50px;
+  /* width: 200px; */
+  margin-left: 10px;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+/* ? Middle container */
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  /* opacity: 0.9; */
+}
+
+/* ? Mission Section */
+.cnt-mission {
+  height: 700px;
+  /** width: 100%;   unnecesserie because div (as default value) take 100% of the parent(if not flexbox) width.*/
+  background-image: url("../images/img-mission-background.jpg");
+  /* background-position: cover; */
+  display: flex;
+  /** align-items: center; We can use it instead of |.mission {margin: auto;| */
+  margin-bottom: 80px;
+}
+.mission {
+  margin: auto 0; /* auto: to center the div vertically (it dosn't works without (display: flex;) in .cnt-mission */
+  width: 100%;
+}
+
+/* ?  headings */
+h2 {
+  margin: 15px auto;
+}
+h4 {
+  margin: 15px auto;
+}
+
+/* ?  Store section */
+figure img {
+  width: 300px;
+  height: 200px;
+}
+figcaption {
+  font-weight: bold;
+  padding: 5px;
+  /* margin-top: 10px; */
+}
+figure {
+  margin: 10px 15px;
+}
+.cnt-store {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* flex-shrink: 0; */
+  padding-bottom: 60px;
+}
+
+/* ?  Location Section */
+.cnt-locations {
+  height: 575px;
+  width: 100%;
+  padding-bottom: 85px;
+  background-image: url(../images/img-locations-background.jpg);
+  /* background-position: cover; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cnt-locations h2 {
+  background-color: transparent;
+}
+.locations {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loc-card {
+  width: 300px;
+  height: 300px;
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*? Contact Section */
+.cnt-foot {
+  height: 200px;
+  line-height: 50px;
+}
+footer {
+  text-align: left;
+  padding-left: 20px;
+}

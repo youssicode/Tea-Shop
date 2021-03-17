@@ -38,6 +38,12 @@ header img {
   /* width: 200px; */
   margin-left: 10px;
 }
+a {
+    color: seashell;
+}
+a:visited {
+    color: seashell;
+}
 ul li {
   display: inline-block;
   list-style: none;

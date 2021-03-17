@@ -52,7 +52,7 @@ ul li {
 }
 
 /* ? Mission Section */
-.cnt-mission {
+#cnt-mission {
   height: 700px;
   /** width: 100%;   unnecesserie because div (as default value) take 100% of the parent(if not flexbox) width.*/
   background-image: url("../images/img-mission-background.jpg");
@@ -87,7 +87,7 @@ figcaption {
 figure {
   margin: 10px 15px;
 }
-.cnt-store {
+#cnt-store {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -96,7 +96,7 @@ figure {
 }
 
 /* ?  Location Section */
-.cnt-locations {
+#cnt-locations {
   height: 575px;
   width: 100%;
   padding-bottom: 85px;
